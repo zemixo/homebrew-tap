@@ -1,10 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1100" height="350" viewBox="0 0 1100 350" role="img" aria-labelledby="title desc">
-  <title id="title">Homebrew Tap — Quiet Orbit workshop</title>
+  <title id="title">Homebrew Tap — Zemixo workshop</title>
   <desc id="desc">A small shelf for useful tools. A cream pixel robot with amber eyes and a project emblem on midnight blue.</desc>
   <rect width="1100" height="350" fill="#091730"/>
   <g fill="none" stroke="#243551" stroke-width="1"><path d="M24 64V24H64M1036 24h40v40M24 286v40h40M1036 326h40v-40"/><path d="M710 52v246" stroke-dasharray="3 9"/></g>
   <g fill="#ffbf58"><rect x="58" y="51" width="9" height="9"/><rect x="73" y="51" width="9" height="9" opacity=".5"/><rect x="88" y="51" width="9" height="9" opacity=".22"/></g>
-  <text x="115" y="61" fill="#c6cdd8" font-family="monospace" font-size="16" letter-spacing="2">QUIET ORBIT / TOOL 05</text>
+  <text x="115" y="61" fill="#c6cdd8" font-family="monospace" font-size="16" letter-spacing="2">ZEMIXO / TOOL 05</text>
   <g fill="#f4ecd6" font-family="monospace" font-size="67" font-weight="700" letter-spacing="-2"><text x="56" y="144">Homebrew</text><text x="56" y="219">Tap</text></g>
   <text x="58" y="265" fill="#c6cdd8" font-family="monospace" font-size="22">A small shelf for useful tools.</text>
   <path d="M58 303h30" stroke="#ffbf58" stroke-width="3"/>

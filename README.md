@@ -1,8 +1,8 @@
-# Quiet Orbit Homebrew Tap
+# Zemixo Homebrew Tap
 
-<img src="https://raw.githubusercontent.com/XJM-free/homebrew-tap/main/quiet-orbit-banner.svg" alt="Homebrew Tap: A small shelf for useful tools. Quiet Orbit pixel robot workshop." width="100%">
+<img src="https://raw.githubusercontent.com/zemixo/homebrew-tap/main/quiet-orbit-banner.svg" alt="Homebrew Tap: A small shelf for useful tools. Zemixo pixel robot workshop." width="100%">
 
-A Homebrew tap for small tools from the Quiet Orbit workshop.
+A Homebrew tap for small tools from the Zemixo workshop.
 
 [Availability](#availability) · [Using this tap](#using-this-tap) · [Release policy](#release-policy)
 
@@ -18,12 +18,12 @@ is in progress; this README does not advertise a working package install yet.
 You can register the tap with Homebrew:
 
 ```sh
-brew tap XJM-free/tap
+brew tap zemixo/tap
 ```
 
 Once a formula has been reviewed and merged, inspect its source and release
 before installing it. Future formulae will use the fully qualified pattern
-`XJM-free/tap/<formula>`; `<formula>` is a placeholder, not an available package.
+`zemixo/tap/<formula>`; `<formula>` is a placeholder, not an available package.
 
 ## Release policy
 
@@ -35,4 +35,4 @@ for trust and installation details.
 
 ---
 
-<sub>Made by [Quiet Orbit](https://github.com/XJM-free) · Small tools. Made with care.</sub>
+<sub>Made by [Zemixo](https://github.com/zemixo) · Small tools. Made with care.</sub>
