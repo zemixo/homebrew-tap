@@ -52,8 +52,24 @@ jobs:
         if: github.event_name == 'pull_request'
         run: brew test-bot --only-formulae
 
-      - name: Test claude-agent-ledger from main
-        if: github.event_name != 'pull_request' && hashFiles('Formula/claude-agent-ledger.rb') != ''
+      - name: Locate claude-agent-ledger formula
+        id: ledger-formula
+        if: github.event_name != 'pull_request'
+        env:
+          TAP_REPOSITORY: ${{ steps.set-up-homebrew.outputs.repository-path }}
+        run: |
+          test -n "$TAP_REPOSITORY"
+          test -d "$TAP_REPOSITORY"
+          # Container tap checkouts live outside GITHUB_WORKSPACE.
+          if [[ -f "$TAP_REPOSITORY/Formula/claude-agent-ledger.rb" ]]; then
+            echo "present=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "present=false" >> "$GITHUB_OUTPUT"
+            echo "::notice::Ledger formula absent; installation test not run."
+          fi
+
+      - name: Test claude-agent-ledger from selected ref
+        if: github.event_name != 'pull_request' && steps.ledger-formula.outputs.present == 'true'
         run: brew test-bot --only-formulae "${{ steps.set-up-homebrew.outputs.tap-name }}/claude-agent-ledger"
 
       - name: Upload bottles as artifact
